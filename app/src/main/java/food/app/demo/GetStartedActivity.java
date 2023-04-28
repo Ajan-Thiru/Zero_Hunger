@@ -13,13 +13,10 @@ public class GetStartedActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_get_started);
 
-        findViewById(R.id.get_started_txt).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent loginIntent = new Intent(GetStartedActivity.this, LoginActivity.class);
-                startActivity(loginIntent);
-                finish();
-            }
+        findViewById(R.id.get_started_txt).setOnClickListener(view -> {
+            Intent loginIntent = new Intent(GetStartedActivity.this, LoginActivity.class);
+            startActivity(loginIntent);
+            finish();
         });
     }
 }

@@ -11,6 +11,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Objects;
 
 public class FoodsFragment extends Fragment {
 
@@ -46,7 +47,7 @@ public class FoodsFragment extends Fragment {
         list.add(new FoodItemModel(R.drawable.food_img_2, "Food name 10", "Rs: Food price"));
 
         recyclerView = view.findViewById(R.id.food_recycler);
-        foodAdapter = new FoodAdapter(list, getActivity().getApplicationContext());
+        foodAdapter = new FoodAdapter(list, Objects.requireNonNull(getActivity()).getApplicationContext());
         LinearLayoutManager manager = new LinearLayoutManager(getActivity().getApplicationContext(), RecyclerView.HORIZONTAL, false);
         recyclerView.setLayoutManager(manager);
         recyclerView.setHasFixedSize(true);

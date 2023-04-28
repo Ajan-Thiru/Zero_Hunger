@@ -66,15 +66,12 @@ public class DashboardActivity extends AppCompatActivity {
         dialog.getWindow().setBackgroundDrawableResource(android.R.color.transparent);
 
         View view = LayoutInflater.from(this).inflate(R.layout.no_internet_dialog, findViewById(R.id.no_internet_layout));
-        view.findViewById(R.id.try_again).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                if (!isConnected(DashboardActivity.this)) {
-                    showInternetDialog();
-                } else {
-                    startActivity(new Intent(getApplicationContext(), DashboardActivity.class));
-                    finish();
-                }
+        view.findViewById(R.id.try_again).setOnClickListener(view1 -> {
+            if (!isConnected(DashboardActivity.this)) {
+                showInternetDialog();
+            } else {
+                startActivity(new Intent(getApplicationContext(), DashboardActivity.class));
+                finish();
             }
         });
 

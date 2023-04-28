@@ -14,4 +14,13 @@
     <string name="no_internet_connection">No internet Connection</string>
     <string name="no_internet_txt">Your internet connection is currently \n not available please check or try again.</string>
     <string name="try_again">Try Again</string>
+    <string name="search">Search...</string>
+    <string name="tabs">Tabs</string>
+    <string name="viewpager">ViewPager</string>
+    <string name="email_address">Email Address</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="name">Name</string>
+    <string name="phone">Phone</string>
+    <string name="register">Register</string>
 </resources>

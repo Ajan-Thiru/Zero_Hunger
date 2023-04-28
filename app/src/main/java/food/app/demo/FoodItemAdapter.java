@@ -19,9 +19,7 @@ public class FoodItemAdapter extends FragmentPagerAdapter {
     public Fragment getItem(int position) {
         switch (position) {
             case 0:
-                return new FoodsFragment();
             case 1:
-                return new FoodsFragment();
             case 2:
                 return new FoodsFragment();
             default:

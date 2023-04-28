@@ -29,6 +29,7 @@
 
     <com.google.android.material.tabs.TabLayout
         android:id="@+id/tabLayout"
+        android:contentDescription="@string/tabs"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="30dp"
@@ -41,6 +42,7 @@
 
     <androidx.viewpager.widget.ViewPager
         android:id="@+id/viewPager"
+        android:contentDescription="@string/viewpager"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_above="@id/tabLayout"
